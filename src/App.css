@@ -1,0 +1,109 @@
+#root {
+  display: grid;
+  place-items: center;
+}
+
+.td-list {
+  margin: 5px;
+  width: 330px;
+  border-radius: 1rem;
+  align-content: space-evenly;
+  word-wrap: break-word;
+}
+
+.td-form {
+  margin: 5px;
+  display: grid;
+  width: 330px;
+  border-radius: 1rem;
+  align-content: space-evenly;
+  word-wrap: break-word;
+}
+.td-input {
+  background: #f3f3f3;
+  border: #9290DB 2px solid;
+  padding: 1rem;
+  outline: none;
+}
+
+.td-add {
+  background: #9290DB;
+  border: #9290DB 2px solid;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.td-add:hover {
+  background-color: #7c60f1b3;
+  border-color: #7c60f1b3;
+}
+
+.task-form {
+  position: relative;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: #9290DB;
+  width: inherit;
+  padding: 1px;
+  word-wrap: break-word;
+}
+
+.task-remove,
+.task-check {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  border-radius: 5px;
+  transition: opacity 0.7s ease;
+}
+
+.checked {
+  background-color: #ffffff91;
+  text-decoration: line-through;
+}
+
+.unchecked {
+  background-color: #9290DB;
+  text-decoration: none;
+}
+
+.task-remove {
+  right: 165px;
+  background-color: #f16060;
+}
+
+.task-check {
+  right: 0;
+  background-color: #60f177;
+}
+
+.task-form:hover .task-remove,
+.task-form:hover .task-check {
+  opacity: 1;
+}
+
+.task-check:hover {
+  background-color: #60f178ce;
+}
+
+.task-remove:hover {
+  background-color: #f16060ce;
+}
+
+.task-form:hover p {
+  visibility: hidden;
+}
+
+h1 {
+  color: #9290DB;
+  font-size: 3rem;
+}
+
+p {
+  margin-left: 8px;
+}
